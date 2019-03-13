@@ -1,0 +1,12 @@
+h1{
+    padding:10px;
+    text-align: center;
+    background: linear-gradient(to bottom, #3b679e 32%,#2b88d9 50%,#207cca 51%,#7db9e8 100%);
+    border:1px solid rgb(0, 0, 0);
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, sans-serif;
+}
+
+.btn-info{
+    margin-bottom: 10px;
+}
