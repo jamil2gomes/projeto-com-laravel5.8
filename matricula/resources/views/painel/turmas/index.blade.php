@@ -44,6 +44,7 @@
             </td>
          </tr>
     @endforeach
+    {{$turmas->links()}}
   </tbody>
 </table>
 
@@ -77,6 +78,7 @@
             </td>
          </tr>
     @endforeach
+    {{$alunos->links()}}
   </tbody>
 </table>
 
@@ -111,6 +113,7 @@
             </td>
          </tr>
     @endforeach
+    {{$professores->links()}}
   </tbody>
 </table>
 

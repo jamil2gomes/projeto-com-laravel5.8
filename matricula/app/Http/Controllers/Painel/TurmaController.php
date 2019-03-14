@@ -23,9 +23,9 @@ class TurmaController extends Controller
 
     public function index(){
         
-        $turmas = $this->turma->all();
-        $alunos = $this->aluno->all();
-        $professores = $this->professor->all();
+        $turmas      = Turma::orderBy('nome','asc')->paginate(3);
+        $alunos      = Aluno::orderBy('nome','asc')->paginate(3);
+        $professores = Professor::orderBy('nome','asc')->paginate(3);
         return view('painel.turmas.index',compact('turmas','alunos','professores'));
     }
 
