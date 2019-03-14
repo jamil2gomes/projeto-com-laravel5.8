@@ -65,7 +65,7 @@ class TurmaController extends Controller
        if($insert)
             return redirect()->route('turmas.index')->with('success', 'Turma registrada com sucesso!');
        else
-            return redirect()->route('turmas.form');
+            return redirect()->route('turmas.form')->with('errors','Erro ao salvar');
     }
 
     public function edit($id){
