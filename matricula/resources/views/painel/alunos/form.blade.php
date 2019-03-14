@@ -2,15 +2,6 @@
 
 @section('content')
 
-@if(isset($errors) || count($errors)>0)
-   
-        @foreach($errors->all() as $erro)
-        <div class="alert alert-danger">
-            <p>{{$erro}}</p>
-            </div>
-        @endforeach
-@endif
-
 @if(isset($aluno))
     <h2>Atualização do Aluno: {{$aluno->nome}}</h2><br><hr>
     <form method="POST" action="{{route('alunos.update',$aluno->id)}}" >

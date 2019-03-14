@@ -1,17 +1,7 @@
 @extends('template.template')
 
 @section('content')
-
-
-@if(isset($errors) || count($errors)>0)
-   
-        @foreach($errors->all() as $erro)
-        <div class="alert alert-danger">
-            <p>{{$erro}}</p>
-            </div>
-        @endforeach
-@endif
-
+@include('painel.mensagens.mensagens')
 @if(isset($turma))
     <h2>Atualização da Turma: {{$turma->nome}}</h2><br><hr>
     <form method="POST" action="{{route('turmas.update',$turma->id)}}" >

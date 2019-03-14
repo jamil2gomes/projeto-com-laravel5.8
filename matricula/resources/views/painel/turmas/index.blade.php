@@ -12,13 +12,7 @@
 <h2>Informações de turmas</h2>
 <br>
 <a href="{{route('turmas.create')}}" class="btn btn-primary">Nova Turma</a><br><br>
-
-@if(session()->get('success'))
-    <div class="alert alert-success">
-      {{ session()->get('success') }}  
-    </div><br />
-@endif
-
+@include('painel.mensagens.mensagens')
 <table class="table table-hover">
   <thead>
     <tr>

@@ -2,14 +2,7 @@
 
 @section('content')
 
-@if(isset($errors) || count($errors)>0)
-   
-        @foreach($errors->all() as $erro)
-        <div class="alert alert-danger">
-            <p>{{$erro}}</p>
-            </div>
-        @endforeach
-@endif
+@include('painel.mensagens.mensagens')
 
 @if(isset($professor))
     <h2>Atualização do Professor: {{$professor->nome}}</h2><br><hr>
